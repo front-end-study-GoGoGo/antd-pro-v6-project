@@ -24,31 +24,73 @@ export default [
   },
   {
     path: '/welcome',
-    name: 'welcome',
+    name: '首页',
     icon: 'smile',
     component: './Welcome',
   },
+  // {
+  //   path: '/admin',
+  //   name: 'admin',
+  //   icon: 'crown',
+  //   access: 'canAdmin',
+  //   routes: [
+  //     {
+  //       path: '/admin',
+  //       redirect: '/admin/sub-page',
+  //     },
+  //     {
+  //       path: '/admin/sub-page',
+  //       name: 'sub-page',
+  //       component: './Admin',
+  //     },
+  //   ],
+  // },
   {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    routes: [
-      {
-        path: '/admin',
-        redirect: '/admin/sub-page',
-      },
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        component: './Admin',
-      },
-    ],
-  },
-  {
-    name: 'list.table-list',
+    name: '营销管理',
     icon: 'table',
     path: '/list',
+    component: './TableList',
+  },
+  {
+    name: '用户管理',
+    icon: 'table',
+    path: '/list1',
+    component: './TableList',
+  },
+  {
+    name: '商品管理',
+    icon: 'table',
+    path: '/list2',
+    component: './TableList',
+  },
+  {
+    name: '订单管理',
+    icon: 'table',
+    path: '/list3',
+    component: './TableList',
+  },
+  {
+    name: '数据分析',
+    icon: 'table',
+    path: '/list4',
+    component: './TableList',
+  },
+  {
+    name: '财务管理',
+    icon: 'table',
+    path: '/list5',
+    component: './TableList',
+  },
+  {
+    name: '客服管理',
+    icon: 'table',
+    path: '/list6',
+    component: './TableList',
+  },
+  {
+    name: '系统设置',
+    icon: 'table',
+    path: '/list7',
     component: './TableList',
   },
   {
